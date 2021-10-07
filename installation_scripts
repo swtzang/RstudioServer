@@ -21,6 +21,9 @@ sudo apt-get install libcairo2-dev
 sudo apt-get install libssl-dev libcurl4-openssl-dev 
 # for redirects
 sudo apt-get install apache2 
+# Test running R to see if it works:
+sudo -i R
+
 
 # Install Rstudio server
 # Note: The latest version of Rstudio server for Ubuntu is available here (2021.09.29): 
