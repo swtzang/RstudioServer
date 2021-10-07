@@ -5,13 +5,22 @@ sudo apt-get upgrade
 sudo add-apt-repository ppa:marutter/rrutter
 sudo apt update
 
-# Install R and related packages
+# Install R (and related packages
 # Add the CRAN Debian or Ubuntu repository so that you can get the latest version of R
-# Ref: https://cran.r-project.org/bin/linux/ubuntu/fullREADME.html
-deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/
-sudo apt-get install r-base
+# Ref: https://linuxize.com/post/how-to-install-r-on-ubuntu-18-04/
+sudo apt install apt-transport-https software-properties-common
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
+sudo apt update
+sudo apt install r-base
+# verify R version
+$ R --version
 
+# 
 sudo apt-get install libv8-3.14-dev 
+# Install the build-essential package which contains the tools required for compiling R Packages.
+sudo apt install build-essential
+
 # install geospatial libs (This is not necessary!)
 sudo apt-get install libgdal-dev gdal-bin libproj-dev proj-data proj-bin libgeos-dev 
 # interactive web graphics
