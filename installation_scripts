@@ -1,3 +1,4 @@
+# This is the script file to install the latest version R and Rstudio on Ubuntu 18.04. 
 # Once you are in, ensure Ubuntu is up to date, upgrad and install!
 # Update Ubuntu first!
 sudo apt-get update
