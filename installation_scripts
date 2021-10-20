@@ -6,7 +6,7 @@ sudo apt-get upgrade
 sudo add-apt-repository ppa:marutter/rrutter
 sudo apt update
 
-# Install R (and related packages
+# Install R (and related packages)
 # Add the CRAN Debian or Ubuntu repository so that you can get the latest version of R
 # Ref: https://linuxize.com/post/how-to-install-r-on-ubuntu-18-04/
 sudo apt install apt-transport-https software-properties-common
