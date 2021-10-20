@@ -44,6 +44,8 @@ sudo -i R
 sudo apt-get install gdebi-core
 wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2021.09.0-351-amd64.deb
 sudo gdebi rstudio-server-2021.09.0-351-amd64.deb
+# After installing it, you should then check if the service has been started correctly.
+sudo systemctl status rstudio-server
 
 # Install R shiny: Create another VM for my Shiny web page
 # https://canovasjm.netlify.app/2020/01/08/deploy-you-own-shiny-server-on-azure/
